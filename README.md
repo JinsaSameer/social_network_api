@@ -19,5 +19,5 @@ THEN I am able to successfully create and delete reactions to thoughts and add a
 
 ```
 ##video for the app
-https://drive.google.com/file/d/1dVsPC_xqq7HaglGXD5MfhRmBlqeq2c2F/view?usp=sharing
-https://drive.google.com/file/d/1jtyVz_WNCeOa3ezbkYIi_8QBAxuHU7ho/view?usp=sharing
+https://drive.google.com/file/d/1dVsPC_xqq7HaglGXD5MfhRmBlqeq2c2F/view
+https://drive.google.com/file/d/1dVsPC_xqq7HaglGXD5MfhRmBlqeq2c2F/view
