@@ -3,7 +3,7 @@ const userController = {
     // Get all users
     getUser(req, res) {
       User.find()
-      .select('-__v')
+      /*.select('-__v')*/
         .then((user) => res.json(user))
         .catch((err) => res.status(500).json(err));
         /*.then(dbUserData => res.json(dbUserData))
@@ -30,10 +30,13 @@ const userController = {
       });
   },
   //create User
-  createUser({body}, res) {
-    User.create(body)
-    .then(dbUsersData => res.json(dbUsersData))
-    .catch(err =>  res.status(400).json(err));
+  createUser(req, res) {
+    User.create(req.body)
+    .then((User) => res.json(User))
+    .catch((err) => {
+      console.log(err);
+       res.status(400).json(err)
+    });
 },
   
   //Update user
