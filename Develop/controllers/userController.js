@@ -65,12 +65,12 @@ const userController = {
       .catch((err) => res.status(500).json(err));
   },
   //Add a friend
-  addFriend(req, res) {
+  addFriend({params}, res) {
     console.log('You are adding new friend');
-    console.log(req.body);
+    //console.log(req.body);
     User.findOneAndUpdate(
-      { _id: req.params.userId },
-      { $addToSet: { friend: req.body } },
+      { _id: params.Id },
+      { $addToSet: { friend:params.friendId } },
       { runValidators: true, new: true }
     )
     .then((user) => {
@@ -83,10 +83,10 @@ const userController = {
     .catch((err) => res.status(500).json(err));
   },
   // Delete Friend
-  deleteFriend(req, res) {
+  deleteFriend({params}, res) {
     User.findOneAndUpdate(
-      { _id: req.params.userId },
-      { $pull: { friend: { friendId: req.params.friendId } } },
+      { _id: params.Id },
+      { $pull: { friend: { friend: params.friendId } } },
       { runValidators: true, new: true }
     )
       .then((user) =>
