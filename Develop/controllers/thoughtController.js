@@ -76,11 +76,12 @@ getSingleThought(req, res) {
       .catch((err) => res.status(500).json(err));
   },
   // Delete Reaction from a thought
-  deleteReaction(req, res) {
+  deleteReaction({params}, res) {
     Thought.findOneAndUpdate(
-      { _id: req.params.thoughtId },
-      { $pull: { reaction: { reactionId: req.params.reactionId } } },
+      { _id: params.thoughtId },
+      { $pull: { reaction: { reactionId:params.reactionId } } },
       { runValidators: true, new: true }
+      
     )
       .then((thought) =>
         !thought
