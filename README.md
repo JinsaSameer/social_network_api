@@ -18,6 +18,35 @@ WHEN I test API POST and DELETE routes in Insomnia
 THEN I am able to successfully create and delete reactions to thoughts and add and remove friends to a user’s friend list
 
 ```
-##video for the app
-https://drive.google.com/file/d/1dVsPC_xqq7HaglGXD5MfhRmBlqeq2c2F/view
-https://drive.google.com/file/d/1dVsPC_xqq7HaglGXD5MfhRmBlqeq2c2F/view
+## Live video for the route
+
+
+//Add user and thought
+https://drive.google.com/file/d/1tFRWLv6th14tztq4W6WZC7u-9EOmetgZ/view
+
+adding friend
+https://drive.google.com/file/d/1r3iy56TFNnmEmtZWOw5XmEhmaNUdbBMw/view
+
+//adding reaction
+https://drive.google.com/file/d/1tB2INeq_ISjz4bq5oIhK_haJfyg1lh9Y/view
+//get route all user,allthought,single user and single thought
+https://drive.google.com/file/d/1b67Prkte6lWygtpP7-lcx0z611kx_Mwz/view
+
+//update thought
+https://drive.google.com/file/d/1CK_BTSQGgP0HnL7fpyvHS3MbmFaD4guA/view
+
+//update user
+https://drive.google.com/file/d/1BBs9gOP-Pw0LSS0QOWZXVCjqM0z9tsKv/view
+//delete user
+
+https://drive.google.com/file/d/1KwVpsdKwxZgcBAc0TAWd5mO7el5ITkSg/view
+
+//delete thought
+https://drive.google.com/file/d/1g4FpfPhMyLgF4RBldGorxtbEc_ZTM_X1/view
+
+//delete friend
+https://drive.google.com/file/d/1Z5NdLrA91itYQ9k4bAHsTYPU_psAatvG/view
+
+
+
+
